@@ -6,18 +6,21 @@ This guide will help you set up and run the PDF AI Chatbot application.
 
 1. Python 3.8+ installed on your system
 2. Ollama installed and running (https://ollama.com)
-3. A compatible LLM model pulled into Ollama (e.g., llama3)
+3. A compatible LLM model pulled into Ollama (e.g., llama3.2)
 
 ## Installation Steps
 
 1. **Clone or download the application files**
-   - Save the Python script as `app.py`
-   - Save the requirements file as `requirements.txt`
+   - The Python script is named `pdf-chatbot.py`
+   - Make sure you have the `requirements.txt` file
 
 2. **Create a virtual environment** (recommended)
    ```bash
    python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   # On Windows:
+   source ./venv/Scripts/activate
+   # On macOS/Linux:
+   source venv/bin/activate
    ```
 
 3. **Install dependencies**
@@ -29,12 +32,12 @@ This guide will help you set up and run the PDF AI Chatbot application.
    - Make sure Ollama is running on your system (default: http://localhost:11434)
    - Pull a compatible model if you haven't already:
      ```bash
-     ollama pull llama3
+     ollama pull llama3.2
      ```
 
 5. **Run the application**
    ```bash
-   streamlit run app.py
+   streamlit run pdf-chatbot.py
    ```
 
 6. **Access the application**
